@@ -1,0 +1,29 @@
+{
+  "name": "capital-lens",
+  "version": "1.0.0",
+  "description": "Marxian analysis for the AI economy. 8 analytical frameworks sourced to Marx's primary texts. Not politics — analytical toolkit.",
+  "author": {
+    "name": "tomerose",
+    "url": "https://github.com/tomerose"
+  },
+  "homepage": "https://github.com/tomerose/capital-lens",
+  "repository": "https://github.com/tomerose/capital-lens",
+  "license": "MIT",
+  "keywords": [
+    "economics",
+    "political-economy",
+    "marx",
+    "ai-ethics",
+    "platform-economy",
+    "analysis",
+    "finance",
+    "labor"
+  ],
+  "skills": [
+    {
+      "name": "capital-lens",
+      "path": "SKILL.md",
+      "description": "Analyze modern technology, platforms, and financial systems through Marx's analytical frameworks. 8 tools: surplus value, alienation, organic composition, general law, fragment on machines, primitive accumulation, commodity fetishism, falling rate of profit."
+    }
+  ]
+}

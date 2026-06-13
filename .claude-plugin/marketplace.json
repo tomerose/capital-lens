@@ -1,0 +1,15 @@
+{
+  "name": "capital-lens",
+  "owner": {
+    "name": "tomerose",
+    "url": "https://github.com/tomerose"
+  },
+  "plugins": [
+    {
+      "name": "capital-lens",
+      "description": "Capital Lens — Marxian analysis for the AI economy. Apply Marx's analytical frameworks (surplus value, alienation, fragment on machines) to modern tech, platforms, and finance. All 8 frameworks sourced to primary texts.",
+      "version": "1.0.0",
+      "source": "./"
+    }
+  ]
+}
