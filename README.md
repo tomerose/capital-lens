@@ -1,9 +1,50 @@
-# Capital Lens — Marxian Analysis for the AI Economy
+# Capital Lens — a primary-source analysis skill for the AI economy
+
+> 中文速览：Capital Lens 是一个给 Claude Code 使用的分析 Skill。它把《资本论》《大纲》等一手文本中的概念整理成可调用框架，用来分析 AI 产业的价值、劳动、平台与自动化问题；它提供分析工具，不替代事实核查或政治立场。
+
+Capital Lens makes a historical analytical tradition available as an explicit, inspectable prompt interface. Its claims are framed as structured readings of present-day systems, not predictions or investment advice.
+
+## What the skill provides
+
+- **Named analytical lenses:** surplus value, alienation, dialectics, accumulation, and the “Fragment on Machines.”
+- **Traceable inputs:** each framework points back to a primary-source reference rather than treating an opaque prompt as authority.
+- **Repeatable interaction:** slash-style commands choose a lens and apply it to a supplied company, market, or technology question.
+- **Interpretive boundary:** outputs are analytical hypotheses; users still need current sources for factual or financial conclusions.
+
+## Architecture at a glance
+
+```mermaid
+flowchart LR
+    QUESTION[Company, market, or technology question] --> CMD[Skill command]
+    CMD --> FRAME[Named analytical framework]
+    FRAME --> SOURCES[Primary-source reference map]
+    SOURCES --> READING[Structured analytical reading]
+    READING --> OUTPUT[Claims, tensions, and questions to investigate]
+```
+
+## Install
+
+```text
+/plugin marketplace add tomerose/capital-lens
+```
+
+Alternatively, inspect `SKILL.md` and `references/primary-sources.md` before installing manually. Example: `/capital-lens OpenAI`.
+
+## Related work
+
+- [Stop Slop](https://github.com/tomerose/stop-slop) — a writing-quality Skill with an explicit rubric.
+- [Token Doctor](https://github.com/tomerose/token-doctor) — a diagnostic Skill for coding-agent context overhead.
+
+> **Reuse note:** this repository is publicly visible but does not currently include a license grant.
+
+---
+
+## Framework reference
 
 > *"Labour no longer appears so much to be included within the production process; rather, the human being comes to relate more as watchman and regulator to the production process itself."*
 > — Karl Marx, Grundrisse, 1857
 
-**Marx predicted AI in 1857. This skill gives Claude the analytical tools he built.**
+**A primary-source analytical toolkit for examining the AI economy.**
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/tomerose/capital-lens?style=for-the-badge" alt="Stars">
